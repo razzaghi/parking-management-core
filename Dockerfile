@@ -9,7 +9,7 @@ RUN apt-get install libmariadbclient-dev
 #RUN apt-get install libmysqlclient-dev
 RUN pip install virtualenv
 RUN virtualenv env
-RUN source env/bin/activate
+#RUN source env/bin/activate
 
 RUN pip install -r requirements.txt && \
         python manage.py collectstatic --noinput
