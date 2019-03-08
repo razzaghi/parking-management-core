@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . /app/
 
 RUN apt-get -y update
-RUN apt-get install -y python3.6-dev
+RUN apt-get install -y python-pip python-dev libpq-dev
 RUN apt-get install -y libmysqlclient-dev
 RUN pip install virtualenv
 RUN virtualenv env
