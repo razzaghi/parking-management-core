@@ -12,7 +12,7 @@ services:
   db:
     image: mysql
     environment:
-      MYSQL_DATABASE: djangodocker_db
+      MYSQL_DATABASE: parking
       MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
