@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . /app/
 
 RUN apt-get -y update
-RUN apt-get install mysql-server
+RUN apt-get install -y mysql-server
 RUN apt-get install -y libmysqlclient-dev
 RUN pip install virtualenv
 RUN virtualenv env
