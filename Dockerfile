@@ -6,7 +6,7 @@ COPY . /app/
 
 RUN apt-get update
 RUN apt-get install libmariadbclient-dev
-RUN apt-get install libmysqlclient-dev
+#RUN apt-get install libmysqlclient-dev
 RUN apt-get install python-pip python-dev libpq-dev
 RUN pip install virtualenv
 RUN virtualenv env
