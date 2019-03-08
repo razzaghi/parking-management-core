@@ -10,7 +10,7 @@ RUN apt-get install -y default-libmysqlclient-dev
 RUN pip install virtualenv
 #RUN pip install mysql-python
 RUN virtualenv env
-RUN source env/bin/activate
+RUN ./env/bin/activate
 
 RUN pip install -r requirements.txt
 
