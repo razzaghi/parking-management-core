@@ -1,13 +1,14 @@
-FROM python:3.6
+FROM python:2.7
 
 WORKDIR /app
 
 COPY . /app/
 
 RUN apt-get update
-RUN apt-get install libmariadbclient-dev
-#RUN apt-get install libmysqlclient-dev
+#RUN apt-get install libmariadbclient-dev
+RUN apt-get install python-dev default-libmysqlclient-dev
 RUN pip install virtualenv
+#RUN pip install mysql-python
 RUN virtualenv env
 #RUN source env/bin/activate
 
