@@ -4,12 +4,12 @@ WORKDIR /app
 
 COPY . /app/
 
-RUN apt-get update
-RUN apt-get install libmysqlclient-dev
-RUN apt-get install python-pip python-dev libpq-dev
-RUN pip install virtualenv
-RUN virtualenv env
-RUN source env/bin/activate
+apt-get update
+apt-get install libmysqlclient-dev
+apt-get install python-pip python-dev libpq-dev
+pip install virtualenv
+virtualenv env
+source env/bin/activate
 
 RUN pip install -r requirements.txt && \
         python manage.py collectstatic --noinput
