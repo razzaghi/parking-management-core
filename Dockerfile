@@ -5,10 +5,9 @@ WORKDIR /app
 COPY . /app/
 
 RUN apt-get -y update
-#RUN apt-get install libmariadbclient-dev
-RUN apt-get install -y default-libmysqlclient-dev
+RUN apt-get install mysql-server
+RUN apt-get install -y libmysqlclient-dev
 RUN pip install virtualenv
-RUN apt install mysqlclient
 RUN virtualenv env
 RUN chmod 777 ./env -Rf
 RUN ./env/bin/activate
