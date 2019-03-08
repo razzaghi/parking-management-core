@@ -35,7 +35,7 @@ BASE_DIR = root()
 # DEBUG = True
 DEBUG = env('DEBUG')
 TEMPLATE_DEBUG = DEBUG
-ALLOWED_HOSTS = ['138.201.164.89', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['195.201.126.22', 'localhost', '127.0.0.1']
 SECRET_KEY = env('SECRET_KEY')
 
 MEDIA_ROOT = BASE_DIR + '/uploads/'
