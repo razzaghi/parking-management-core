@@ -8,7 +8,7 @@ RUN apt-get -y update
 #RUN apt-get install libmariadbclient-dev
 RUN apt-get install -y default-libmysqlclient-dev
 RUN pip install virtualenv
-RUN pip install mysql-python
+RUN pip install mysqlclient
 RUN virtualenv env
 RUN chmod 777 ./env -Rf
 RUN ./env/bin/activate
