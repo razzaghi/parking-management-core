@@ -1,0 +1,7 @@
+.idea/
+*.pyc
+.env
+uploads/
+media/
+env/
+statics/

@@ -1,0 +1,22 @@
+#pip:
+
+pip install future
+pip install django
+pip install djangorestframework
+pip install mysql-python / pip install mysqlclient
+pip install django-environ
+pip install python-dotenv
+pip install requests
+pip install django gunicorn
+pip install Pillow
+pip install djangorestframework-jwt
+pip install django-filter
+
+
+#OS:
+
+    apt-get install mysql-server
+    sudo apt-get install gunicorn
+    sudo apt-get install libmariadbclient-dev
+    sudo apt-get install libmysqlclient-dev
+    sudo apt-get install python-pip python-dev libpq-dev postgresql postgresql-contrib nginx
